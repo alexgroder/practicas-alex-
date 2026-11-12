@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    padding: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border-left: 5px solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-height: 150px;
+}
+
+.card .icono {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #344054;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-size: 28px;
+    color: #192951;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Colores de las tarjetas */
+
+.equipos {
+    border-color: #2563eb;
+}
+
+.operativos {
+    border-color: #10a37f;
+}
+
+.mantenimiento {
+    border-color: #d97706;
+}
+
+.incidencias {
+    border-color: #dc3545;
+}
+
+/* Diseño adaptable */
+
+@media (max-width: 900px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}

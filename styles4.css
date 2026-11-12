@@ -1,0 +1,52 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 350px;
+    background: #192951;
+    padding: 19px 10px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ENLACES */
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 20px 24px;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+/* OPCIÓN ACTIVA */
+.menu a.activo {
+    background: #2863e8;
+}
+
+/* EFECTO DEL MOUSE */
+.menu a:hover {
+    background: #2863e8;
+}

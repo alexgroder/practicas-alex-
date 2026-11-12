@@ -1,0 +1,79 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f8;
+    padding: 8px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+}
+
+/* TABLA */
+.tabla-equipos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* ENCABEZADO */
+.tabla-equipos thead {
+    background-color: #203f8c;
+    color: white;
+}
+
+.tabla-equipos th {
+    padding: 17px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* FILAS */
+.tabla-equipos td {
+    padding: 16px 17px;
+    font-size: 16px;
+    color: #45505f;
+    border-bottom: 1px solid #e1e6ed;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.tabla-equipos tbody tr:hover {
+    background-color: #f4f7fc;
+}
+
+/* ESTADOS */
+.estado {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* OPERATIVO */
+.operativo {
+    background-color: #d9fbe7;
+    color: #216b42;
+}
+
+/* MANTENIMIENTO */
+.mantenimiento {
+    background-color: #ffedcf;
+    color: #92501b;
+}
+
+/* PENDIENTE */
+.pendiente {
+    background-color: #ffe0e0;
+    color: #a52b2b;
+}
